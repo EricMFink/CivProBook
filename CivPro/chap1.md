@@ -1,6 +1,20 @@
 ---
-layout: casebook
 title: Foundations of Civil Procedure 
+bibliography: ".bib/Casebooks.yaml"
+csl: ".bib/casebook.csl"
+
+format: 
+  html:
+    css: .css/casebook.css
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    toc-expand: true
+    toc-title: "Contents"
+    number-sections: true
+    number-depth: 3
+    reference-location: margin
+    citation-location: margin
 
 ---
 
