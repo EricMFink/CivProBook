@@ -1,12 +1,42 @@
----
+project:
+  type: book
 
-bibliography: ".bib/Casebooks.yaml"
-csl: ".bib/casebook.csl"
+execute:
+  freeze: auto
 
-format: 
-  html:
-    css: .css/casebook.css
-    code-fold: true
+book:
+  title: "Civil Procedure"
+  subtitle: "An Open-Source Casebook"
+  author: "Eric M. Fink"
+  date: "Fall 2025"
+  downloads: [pdf]
+  url: https://www.emfink.org/CivProBook
+  repo-url: https://github.com/EricMFink/CivProBook
+  repo-actions: edit
+  search: true
+  reader-mode: true
+  sidebar:
+    style: "docked"
+  chapters:
+    - index.qmd
+    - colophon.qmd
+    - epigraph.qmd
+    - preface.qmd
+    - part: "Content"
+      chapters:
+        - chap1.qmd
+        - chap2.qmd
+  appendices:
+    - references.qmd
+
+bibliography: Casebooks.yaml
+csl: casebook.csl
+
+format:
+  bookup-html:
+    header-includes: |
+      <link rel="stylesheet" href="https://use.typekit.net/viv2jun.css">
+    mainfont: athelas
     toc: true
     toc-depth: 3
     toc-expand: true
@@ -15,4 +45,6 @@ format:
     number-depth: 3
     reference-location: margin
     citation-location: margin
----
+    css: casebook.css
+
+
