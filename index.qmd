@@ -1,9 +1,7 @@
 
-<div class="index">
+:::{.content-hidden when-format="html"}:::
+# Home
+:::
 
-# Cover {.unnumbered}
-
-</div>
-
-![](img/cover.png)
+![Litigation](/img/cover.png)
 

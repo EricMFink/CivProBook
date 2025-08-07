@@ -1,0 +1,9 @@
+
+<div class="index">
+
+# Cover {.unnumbered}
+
+</div>
+
+![](img/cover.png)
+
