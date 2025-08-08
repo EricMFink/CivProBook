@@ -1,6 +1,0 @@
-
-:::{.content-hidden when-format="html"}:::
-# Home {.unnumbered}
-:::
-
-![](img/litigation.png)

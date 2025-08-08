@@ -11,12 +11,11 @@ book:
   output-file: CivProBook # outputs: docs/CivProBook.pdf
   author: Eric M. Fink
   date: September 2025
-  date-format: MMMM, YYYY
+  date-format: MMMM YYYY
   license: "CC BY NC SA"
   downloads: [pdf]
   chapters:
     - index.qmd
-    - 01-Front/license.qmd
     - 01-Front/epigraph.qmd
     - 01-Front/preface.qmd
     - part: "Content"
@@ -35,8 +34,7 @@ format:
       <link rel="stylesheet" href="https://use.typekit.net/viv2jun.css">    
     page-layout: full
     reference-location: margin
-    citation-location: margin
-    title-block-style: none
+    citation-location: document
     backgroundcolor: FloralWhite
     sidebarbackgroundcolor: FloralWhite
     default-image-extension: svg

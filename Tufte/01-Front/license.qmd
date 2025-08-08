@@ -1,10 +1,10 @@
-:::{.content-hidden when-format="html"}:::
-# License {.unnumbered}
+::: {.content-visible when-format="revealjs"}
+# License {.unnumbered} 
 :::
 
-<div class="license" group>
+<div class="license">
 
-<p><i class="fa-brands fa-creative-commons"></i><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-sa"></i></p>
+{{< fa creative-commons >}}{{< fa creative-commons-by >}}{{< fa creative-commons-nc >}}{{< fa creative-commons-sa >}}
 	
 <p>All original content is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
