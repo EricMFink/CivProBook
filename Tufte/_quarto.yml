@@ -25,8 +25,8 @@ book:
         - 03-Back/references.qmd
         - 03-Back/ack.qmd
         - 03-Back/colophon.qmd
-bibliography: ./bib/CivProBook.yaml
-csl: ./bib/casebook.csl
+bibliography: ./CivProBook.yaml
+csl: ./chicago-shortened-notes-bibliography.csl
 
 format:
   html:
@@ -45,7 +45,7 @@ format:
     toc-title: "Contents"
     number-sections: true
     number-depth: 3
-    css: casebook.css
+    css: casebook-tufte.css
   pdf:
     reference-location: margin
     citation-location: margin

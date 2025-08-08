@@ -33,8 +33,12 @@ references:
   type: book
 
 - id: aousc_nd
+  author:
+    - family: Administrative Office of the U.S. Courts
+      given: ''
   citation-key: aousc_nd
-  publisher: Administrative Office of the U.S. Courts
+  issued:
+    - literal: n.d.
   title: Understanding the Federal Courts
   title-short: Understanding the Federal Courts
   type: document
@@ -44,9 +48,9 @@ references:
 - id: Felstiner1980
   author:
     - family: Felstiner
-      given: William LF
+      given: William
     - family: Abel
-      given: Richard L
+      given: Richard
     - family: Sarat
       given: Austin
   citation-key: Felstiner1980
@@ -68,7 +72,6 @@ references:
       day: 1
   number: 3:17-cv-00093-GFVT
   title: Burdine v. Metropolitan Direct Property and Casualty Ins. Co.
-  title-short: Burdine v. Metropolitan Direct Property & Casualty Ins. Co. (E.D. Ky. 2018)
   type: legal_case
 
 - id: MosleyGeneralMotors1980
@@ -109,7 +112,6 @@ references:
   jurisdiction: D. Maryland
   page: '674'
   title: Ginwright v. Exeter Finance Corp.
-  title-short: Ginwright v. Exeter Finance Co. (D. Md. 2017)
   type: legal_case
   volume: '280'
 
@@ -158,7 +160,6 @@ references:
   jurisdiction: SD California
   number: Case No. 12-cv-2859-L(BGS)
   title: Camacho v. Major League Baseball
-  title-short: Camacho v. Major League Baseball (S.D. Cal. 2013)
   type: legal_case
 
 - id: SullivanBlakeFedexGround2020
@@ -181,7 +182,6 @@ references:
     - year: 2020
   page: '219'
   title: Buck v. Gordon
-  title-short: Buck v. Gordon (6th Cir. 2020)
   type: legal_case
   volume: '959'
 
@@ -195,4 +195,64 @@ references:
   title: Amador County, Cal. v. Us Dept. of the Interior
   type: legal_case
   volume: '772'
+
+- id: Rule1_nd
+  citation-key: Rule1_nd
+  container-title: Fed. R. Civ. P.
+  section: '1'
+  title: Rule 1
+  type: legislation
+
+- id: FRCP2_nd
+  citation-key: FRCP2_nd
+  title: FRCP 2
+  type: document
+
+- id: FRCP13_nd
+  citation-key: FRCP13_nd
+  title: FRCP 13
+  type: document
+
+- id: RulesEnablingAct_nd
+  citation-key: RulesEnablingAct_nd
+  container-title: U.S.C.
+  section: 2071, et. seq.
+  title: Rules Enabling Act
+  type: legislation
+  volume: '28'
+
+- id: FRCP18_nd
+  citation-key: FRCP18_nd
+  title: FRCP 18
+  type: document
+
+- id: FRCP42_nd
+  citation-key: FRCP42_nd
+  title: FRCP 42
+  type: document
+
+- id: FRCP14_nd
+  citation-key: FRCP14_nd
+  title: FRCP 14
+  type: document
+
+- id: FRCP15_nd
+  citation-key: FRCP15_nd
+  title: FRCP 15
+  type: document
+
+- id: FRCP19_nd
+  citation-key: FRCP19_nd
+  title: FRCP 19
+  type: document
+
+- id: FRCP20_nd
+  citation-key: FRCP20_nd
+  title: FRCP 20
+  type: document
+
+- id: FRCP24_nd
+  citation-key: FRCP24_nd
+  title: FRCP 24
+  type: document
 ...

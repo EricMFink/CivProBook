@@ -1,6 +1,8 @@
-::: {.content-visible when-format="revealjs"}
+<div class="hidden">
+
 # Epigraph {.unnumbered}
-:::
+
+</div>
 
 <div class="epigraph">
 

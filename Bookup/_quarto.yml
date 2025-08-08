@@ -29,8 +29,8 @@ book:
   appendices:
     - references.qmd
 
-bibliography: CivProBook.yaml
-csl: casebook.csl
+bibliography: ./CivProBook.yaml
+csl: ./chicago-shortened-notes-bibliography.csl
 reference-location: margin
 citation-location: margin
 

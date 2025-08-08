@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://use.typekit.net/viv2jun.css">    
 
 
-<link rel="stylesheet" href="../casebook.css">
+<link rel="stylesheet" href="../casebook-tufte.css">
 <meta property="og:title" content="1&nbsp; Foundations of Civil Procedure – Civil Procedure">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://www.emfink.org/CivProBook/img/FedCourtsMap.png">
@@ -161,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../03-Back/references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Table of Authorities</span></a>
+ <span class="menu-text">Bibliography</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -184,13 +203,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#franz-kafka-before-the-law" id="toc-franz-kafka-before-the-law" class="nav-link active" data-scroll-target="#franz-kafka-before-the-law">Franz Kafka, <em>Before the Law</em></a></li>
+  <li><a href="#kafka1915" id="toc-kafka1915" class="nav-link active" data-scroll-target="#kafka1915"><span class="citation" data-cites="Kafka1915">Franz Kafka <em>Before the Law</em></span></a></li>
   <li><a href="#the-judicial-system" id="toc-the-judicial-system" class="nav-link" data-scroll-target="#the-judicial-system"><span class="header-section-number">1.1</span> The Judicial System</a>
   <ul>
   <li><a href="#federal-courts" id="toc-federal-courts" class="nav-link" data-scroll-target="#federal-courts"><span class="header-section-number">1.1.1</span> Federal Courts</a>
   <ul class="collapse">
   <li><a href="#u.s.-constitution-article-iii" id="toc-u.s.-constitution-article-iii" class="nav-link" data-scroll-target="#u.s.-constitution-article-iii">U.S. Constitution, Article III</a></li>
-  <li><a href="#understanding-the-federal-courts" id="toc-understanding-the-federal-courts" class="nav-link" data-scroll-target="#understanding-the-federal-courts">Understanding the Federal Courts</a></li>
+  <li><a href="#aousc_nd" id="toc-aousc_nd" class="nav-link" data-scroll-target="#aousc_nd"><span class="citation" data-cites="aousc_nd">Administrative Office of the U.S. Courts <em>Understanding the Federal Courts</em></span></a></li>
   </ul></li>
   <li><a href="#state-courts" id="toc-state-courts" class="nav-link" data-scroll-target="#state-courts"><span class="header-section-number">1.1.2</span> State Courts</a></li>
   </ul></li>
@@ -198,15 +217,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#turning-disputes-into-lawsuits" id="toc-turning-disputes-into-lawsuits" class="nav-link" data-scroll-target="#turning-disputes-into-lawsuits"><span class="header-section-number">1.2.1</span> Turning Disputes into Lawsuits</a>
   <ul class="collapse">
-  <li><a href="#the-emergence-transformation-of-disputes-felstiner1" id="toc-the-emergence-transformation-of-disputes-felstiner1" class="nav-link" data-scroll-target="#the-emergence-transformation-of-disputes-felstiner1">The Emergence &amp; Transformation of Disputes </a></li>
+  <li><a href="#felstiner1980" id="toc-felstiner1980" class="nav-link" data-scroll-target="#felstiner1980"><span class="citation" data-cites="Felstiner1980">William Felstiner et al. <em>The Emergence and Transformation of Disputes</em></span></a></li>
   </ul></li>
   </ul></li>
   <li><a href="#the-federal-rules-of-civil-procedure" id="toc-the-federal-rules-of-civil-procedure" class="nav-link" data-scroll-target="#the-federal-rules-of-civil-procedure"><span class="header-section-number">1.3</span> The Federal Rules of Civil Procedure</a>
   <ul>
-  <li><a href="#u.s.c.-2071" id="toc-u.s.c.-2071" class="nav-link" data-scroll-target="#u.s.c.-2071">28 U.S.C.&nbsp;§ 2071</a></li>
-  <li><a href="#u.s.c.-2072" id="toc-u.s.c.-2072" class="nav-link" data-scroll-target="#u.s.c.-2072">28 U.S.C.&nbsp;§ 2072</a></li>
-  <li><a href="#u.s.c.-2073" id="toc-u.s.c.-2073" class="nav-link" data-scroll-target="#u.s.c.-2073">28 U.S.C.&nbsp;§ 2073</a></li>
-  <li><a href="#u.s.c.-2074" id="toc-u.s.c.-2074" class="nav-link" data-scroll-target="#u.s.c.-2074">28 U.S.C.&nbsp;§ 2074</a></li>
+  <li><a href="#the-rules-enabling-act-28-u.s.c.-2071-et-seq." id="toc-the-rules-enabling-act-28-u.s.c.-2071-et-seq." class="nav-link" data-scroll-target="#the-rules-enabling-act-28-u.s.c.-2071-et-seq.">The Rules Enabling Act, 28 U.S.C. § 2071 et seq.</a></li>
   <li><a href="#fed.-r.-civ.-p.-rule-1" id="toc-fed.-r.-civ.-p.-rule-1" class="nav-link" data-scroll-target="#fed.-r.-civ.-p.-rule-1">Fed. R. Civ. P. Rule 1</a></li>
   <li><a href="#fed.-r.-civ.-p.-rule-2" id="toc-fed.-r.-civ.-p.-rule-2" class="nav-link" data-scroll-target="#fed.-r.-civ.-p.-rule-2">Fed. R. Civ. P. Rule 2</a></li>
   <li><a href="#stages-of-a-civil-suit" id="toc-stages-of-a-civil-suit" class="nav-link" data-scroll-target="#stages-of-a-civil-suit"><span class="header-section-number">1.3.1</span> Stages of a Civil Suit</a></li>
@@ -227,8 +243,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="franz-kafka-before-the-law" class="level4">
-<h4 class="anchored" data-anchor-id="franz-kafka-before-the-law">Franz Kafka, <em>Before the Law</em></h4>
+<section id="kafka1915" class="level4">
+<h4 class="anchored" data-anchor-id="kafka1915"><span class="citation" data-cites="Kafka1915">Franz Kafka <a href="../03-Back/references.html#ref-Kafka1915" role="doc-biblioref"><em>Before the Law</em></a></span></h4>
 <p>Before the law sits a gatekeeper. To this gatekeeper comes a man from the country who asks to gain entry into the law. But the gatekeeper says that he cannot grant him entry at the moment. The man thinks about it and then asks if he will be allowed to come in later on. “It is possible,” says the gatekeeper, “but not now.” At the moment the gate to the law stands open, as always, and the gatekeeper walks to the side, so the man bends over in order to see through the gate into the inside. When the gatekeeper notices that, he laughs and says: “If it tempts you so much, try it in spite of my prohibition. But take note: I am powerful. And I am only the most lowly gatekeeper. But from room to room stand gatekeepers, each more powerful than the other. I can’t endure even one glimpse of the third.” The man from the country has not expected such difficulties: the law should always be accessible for everyone, he thinks, but as he now looks more closely at the gatekeeper in his fur coat, at his large pointed nose and his long, thin, black Tartar’s beard, he decides that it would be better to wait until he gets permission to go inside. The gatekeeper gives him a stool and allows him to sit down at the side in front of the gate. There he sits for days and years. He makes many attempts to be let in, and he wears the gatekeeper out with his requests. The gatekeeper often interrogates him briefly, questioning him about his homeland and many other things, but they are indifferent questions, the kind great men put, and at the end he always tells him once more that he cannot let him inside yet. The man, who has equipped himself with many things for his journey, spends everything, no matter how valuable, to win over the gatekeeper. The latter takes it all but, as he does so, says, “I am taking this only so that you do not think you have failed to do anything.” During the many years the man observes the gatekeeper almost continuously. He forgets the other gatekeepers, and this one seems to him the only obstacle for entry into the law. He curses the unlucky circumstance, in the first years thoughtlessly and out loud, later, as he grows old, he still mumbles to himself. He becomes childish and, since in the long years studying the gatekeeper he has come to know the fleas in his fur collar, he even asks the fleas to help him persuade the gatekeeper. Finally his eyesight grows weak, and he does not know whether things are really darker around him or whether his eyes are merely deceiving him. But he recognizes now in the darkness an illumination which breaks inextinguishably out of the gateway to the law. Now he no longer has much time to live. Before his death he gathers in his head all his experiences of the entire time up into one question which he has not yet put to the gatekeeper. He waves to him, since he can no longer lift up his stiffening body.</p>
 </section>
 <section id="the-judicial-system" class="level2 page-columns page-full" data-number="1.1">
@@ -248,8 +264,8 @@ ul.task-list li input[type="checkbox"] {
 <p>[ … ]</p>
 </section>
 </section>
-<section id="understanding-the-federal-courts" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="understanding-the-federal-courts">Understanding the Federal Courts</h4>
+<section id="aousc_nd" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="aousc_nd"><span class="citation" data-cites="aousc_nd">Administrative Office of the U.S. Courts <a href="../03-Back/references.html#ref-aousc_nd" role="doc-biblioref"><em>Understanding the Federal Courts</em></a></span></h4>
 <p><strong>Structure of the Federal Courts</strong></p>
 <p>The Supreme Court is the highest court in the United States. Article III of the U.S. Constitution created the Supreme Court and authorized Congress to pass laws establishing a system of lower courts. In the federal court system’s present form, 94 district-level trial courts and 13 courts of appeals sit below the Supreme Court.</p>
 <p><em>Trial Courts</em></p>
@@ -301,12 +317,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="civil-litigation" class="level2 page-columns page-full" data-number="1.2">
+<section id="civil-litigation" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="civil-litigation"><span class="header-section-number">1.2</span> Civil Litigation</h2>
-<section id="turning-disputes-into-lawsuits" class="level3 page-columns page-full" data-number="1.2.1">
+<section id="turning-disputes-into-lawsuits" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="turning-disputes-into-lawsuits"><span class="header-section-number">1.2.1</span> Turning Disputes into Lawsuits</h3>
-<section id="the-emergence-transformation-of-disputes-felstiner1" class="level4">
-<h4 class="anchored" data-anchor-id="the-emergence-transformation-of-disputes-felstiner1">The Emergence &amp; Transformation of Disputes <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h4>
+<section id="felstiner1980" class="level4">
+<h4 class="anchored" data-anchor-id="felstiner1980"><span class="citation" data-cites="Felstiner1980">William Felstiner et al. <a href="../03-Back/references.html#ref-Felstiner1980" role="doc-biblioref"><em>The Emergence and Transformation of Disputes</em></a></span></h4>
 <section id="i.-introduction" class="level5">
 <h5 class="anchored" data-anchor-id="i.-introduction">I.&nbsp;Introduction</h5>
 <p>The sociology of law has been dominated by studies of officials and formal institutions and their work products. This agenda has shaped the way disputes are understood and portrayed. Institutions reify cases by reducing them to records; they embody disputes in a concrete form that can be studied retrospectively by attending to the words used by lay persons and officials and by examining the economic and legal context in which cases occur. But disputes are not things: they are social constructs. Their shapes reflect whatever definition the observer gives to the concept. Moreover, a significant portion of any dispute exists only in the minds of the disputants.</p>
@@ -378,14 +394,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;William Felstiner, et al., The emergence and transformation of disputes: Naming, blaming, claiming…, 15 Law &amp; Society Review 651 (1980)</p></div></div></section>
+</section>
 </section>
 <section id="the-federal-rules-of-civil-procedure" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="the-federal-rules-of-civil-procedure"><span class="header-section-number">1.3</span> The Federal Rules of Civil Procedure</h2>
-<section id="u.s.c.-2071" class="level4">
-<h4 class="anchored" data-anchor-id="u.s.c.-2071">28 U.S.C.&nbsp;§ 2071</h4>
-<section id="rule-making-power-generally" class="level5 legal-code">
-<h5 class="anchored" data-anchor-id="rule-making-power-generally">Rule-making power generally</h5>
+<section id="the-rules-enabling-act-28-u.s.c.-2071-et-seq." class="level4">
+<h4 class="anchored" data-anchor-id="the-rules-enabling-act-28-u.s.c.-2071-et-seq.">The Rules Enabling Act, 28 U.S.C. § 2071 et seq.</h4>
+<div class="legal-code">
+<section id="rule-making-power-generally" class="level5">
+<h5 class="anchored" data-anchor-id="rule-making-power-generally">§ 2071–Rule-making power generally</h5>
 <p>(a)&nbsp;The Supreme Court and all courts established by Act of Congress may from time to time prescribe rules for the conduct of their business. Such rules shall be consistent with Acts of Congress and rules of practice and procedure prescribed under section 2072 of this title.</p>
 <p>(b)&nbsp;Any rule prescribed by a court, other than the Supreme Court, under subsection (a) shall be prescribed only after giving appropriate public notice and an opportunity for comment. Such rule shall take effect upon the date specified by the prescribing court and shall have such effect on pending proceedings as the prescribing court may order.</p>
 <p>(c)&nbsp;</p>
@@ -397,20 +414,14 @@ ul.task-list li input[type="checkbox"] {
 <p>(e)&nbsp;If the prescribing court determines that there is an immediate need for a rule, such court may proceed under this section without public notice and opportunity for comment, but such court shall promptly thereafter afford such notice and opportunity for comment.</p>
 <p>(f)&nbsp;No rule may be prescribed by a district court other than under this section.</p>
 </section>
-</section>
-<section id="u.s.c.-2072" class="level4">
-<h4 class="anchored" data-anchor-id="u.s.c.-2072">28 U.S.C.&nbsp;§ 2072</h4>
-<section id="rules-of-procedure-and-evidence-power-to-prescribe" class="level5 legal-code">
-<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-power-to-prescribe">Rules of procedure and evidence; power to prescribe</h5>
+<section id="rules-of-procedure-and-evidence-power-to-prescribe" class="level5">
+<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-power-to-prescribe">§ 2072–Rules of procedure and evidence; power to prescribe</h5>
 <p>(a)&nbsp;The Supreme Court shall have the power to prescribe general rules of practice and procedure and rules of evidence for cases in the United States district courts (including proceedings before magistrate judges thereof) and courts of appeals.</p>
 <p>(b)&nbsp;Such rules shall not abridge, enlarge or modify any substantive right. All laws in conflict with such rules shall be of no further force or effect after such rules have taken effect.</p>
 <p>(c)&nbsp;Such rules may define when a ruling of a district court is final for the purposes of appeal under section 1291 of this title.</p>
 </section>
-</section>
-<section id="u.s.c.-2073" class="level4">
-<h4 class="anchored" data-anchor-id="u.s.c.-2073">28 U.S.C.&nbsp;§ 2073</h4>
-<section id="rules-of-procedure-and-evidence-method-of-prescribing" class="level5 legal-code">
-<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-method-of-prescribing">Rules of procedure and evidence; method of prescribing</h5>
+<section id="rules-of-procedure-and-evidence-method-of-prescribing" class="level5">
+<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-method-of-prescribing">§ 2073–Rules of procedure and evidence; method of prescribing</h5>
 <p>(a)&nbsp;</p>
 <blockquote class="blockquote">
 <p>(1)&nbsp;The Judicial Conference shall prescribe and publish the procedures for the consideration of proposed rules under this section.</p>
@@ -429,14 +440,12 @@ ul.task-list li input[type="checkbox"] {
 <p>(d)&nbsp;In making a recommendation under this section or under section 2072 or 2075, the body making that recommendation shall provide a proposed rule, an explanatory note on the rule, and a written report explaining the body’s action, including any minority or other separate views.</p>
 <p>(e)&nbsp;Failure to comply with this section does not invalidate a rule prescribed under section 2072 or 2075 of this title.</p>
 </section>
-</section>
-<section id="u.s.c.-2074" class="level4">
-<h4 class="anchored" data-anchor-id="u.s.c.-2074">28 U.S.C.&nbsp;§ 2074</h4>
-<section id="rules-of-procedure-and-evidence-submission-to-congress-effective-date" class="level5 legal-code">
-<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-submission-to-congress-effective-date">Rules of procedure and evidence; submission to Congress; effective date</h5>
+<section id="rules-of-procedure-and-evidence-submission-to-congress-effective-date" class="level5">
+<h5 class="anchored" data-anchor-id="rules-of-procedure-and-evidence-submission-to-congress-effective-date">§ 2074–Rules of procedure and evidence; submission to Congress; effective date</h5>
 <p>(a)&nbsp;The Supreme Court shall transmit to the Congress not later than May 1 of the year in which a rule prescribed under section 2072 is to become effective a copy of the proposed rule. Such rule shall take effect no earlier than December 1 of the year in which such rule is so transmitted unless otherwise provided by law. The Supreme Court may fix the extent such rule shall apply to proceedings then pending, except that the Supreme Court shall not require the application of such rule to further proceedings then pending to the extent that, in the opinion of the court in which such proceedings are pending, the application of such rule in such proceedings would not be feasible or would work injustice, in which event the former rule applies.</p>
 <p>(b)&nbsp;Any such rule creating, abolishing, or modifying an evidentiary privilege shall have no force or effect unless approved by Act of Congress.</p>
 </section>
+</div>
 </section>
 <section id="fed.-r.-civ.-p.-rule-1" class="level4">
 <h4 class="anchored" data-anchor-id="fed.-r.-civ.-p.-rule-1">Fed. R. Civ. P. Rule 1</h4>
@@ -473,9 +482,19 @@ ul.task-list li input[type="checkbox"] {
 <p>If the case is not fully decided on summary judgment (or settled), it will then proceed to trial, at the end of which the court will enter judgment in favor of the plaintiff(s) or defendant(s). After a final judgment has been entered, the losing party may appeal to a higher court. A final judgment may also have consequences for other lawsuits involving the same parties (Claim and Issue Preclusion).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-aousc_nd" class="csl-entry" role="listitem">
+Administrative Office of the U.S. Courts, <em><a href="https://www.uscourts.gov/sites/default/files/understanding-federal-courts.pdf">Understanding the Federal Courts</a></em>
+</div>
+<div id="ref-Felstiner1980" class="csl-entry" role="listitem">
+William Felstiner, Richard Abel &amp; Austin Sarat, <em>The Emergence and Transformation of Disputes: Naming, Blaming, Claiming…</em>, 15 <span class="smallcaps">Law &amp; Society Review</span> 631 (1980)
+</div>
+<div id="ref-Kafka1915" class="csl-entry" role="listitem">
+Franz Kafka, <em><a href="https://www.kafka-online.info/before-the-law.html">Before the Law</a></em>, (1915)
+</div>
+</div>
 </section>
 </section>
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

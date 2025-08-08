@@ -5,5 +5,16 @@
 
 </div>
 
-![](img/cover.png)
+<div class="license">
 
+{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}} {{< fa brands creative-commons-sa >}}
+	
+All original content is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+## Eric M. Fink
+### Associate Professor of Law
+### Elon University School of Law
+### Greensboro, North Carolina 27408
+#### <a href="https://www.emfink.net/ElonLaw/"><span class="mono-face">https://www.emfink.net/ElonLaw</span></a>
+
+</div>
