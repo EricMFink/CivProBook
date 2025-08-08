@@ -1,0 +1,13 @@
+:::{.content-hidden when-format="html"}:::
+# Title Page {.unnumbered}
+:::
+
+<p class="book-author">Eric M. Fink</p>
+	<div class="title-block" group>
+		<p class="book-title">Civil Procedure</p>
+		<p class="book-subtitle">An Open-Source Casebook</p>
+	</div>
+	<div class="publication-block" group>
+		<p class="book-affiliation">Elon Law School</p>
+		<p class="book-date">September 2025</p>
+	</div>

@@ -16,9 +16,8 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - 01-Front/titlepage.qmd
-    - 01-Front/license.tex
-    - 01-Front/epigraph.tex
+    - 01-Front/license.qmd
+    - 01-Front/epigraph.qmd
     - 01-Front/preface.qmd
     - part: "Content"
       chapters:
@@ -27,8 +26,8 @@ book:
         - 03-Back/references.qmd
         - 03-Back/ack.qmd
         - 03-Back/colophon.qmd
-bibliography: CivProBook.yaml
-csl: casebook.csl
+bibliography: ./bib/CivProBook.yaml
+csl: ./bib/casebook.csl
 
 format:
   html:
@@ -38,7 +37,6 @@ format:
     reference-location: margin
     citation-location: margin
     title-block-style: none
-    linkcolor: HopkinsBlue
     backgroundcolor: FloralWhite
     sidebarbackgroundcolor: FloralWhite
     default-image-extension: svg

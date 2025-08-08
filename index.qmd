@@ -1,7 +1,6 @@
 
 :::{.content-hidden when-format="html"}:::
-# Home
+# Home {.unnumbered}
 :::
 
-![Litigation](/img/cover.png)
-
+![](img/litigation.png)
