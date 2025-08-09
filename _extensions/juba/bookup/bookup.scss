@@ -153,7 +153,7 @@ $border-radius:			3px !default;
 
 @media (min-width: 800px) {
     body.docked .page-columns {
-        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 75px) [page-start-inset] 50px [body-start-outset] 50px [body-start] minmax(3em, 5fr) [body-content-start] minmax(300px, 800px) [body-content-end] minmax(3em, 5fr) [body-end] 50px [body-end-outset] minmax(0px, 100px) [page-end-inset] 50px [page-end] 7fr [screen-end-inset] 1.5em [screen-end] !important
+        grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 100px) [page-start-inset] 50px [body-start-outset] 50px [body-start] minmax(3em, 5fr) [body-content-start] minmax(300px, 800px) [body-content-end] minmax(3em, 5fr) [body-end] 50px [body-end-outset] minmax(0px, 100px) [page-end-inset] 50px [page-end] 7fr [screen-end-inset] 1.5em [screen-end] !important
     }
 }
 
@@ -254,6 +254,21 @@ h6 {
 	color: inherit;
 	font-size: inherit;
 	padding-right: .5rem;
+}
+
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+	text-transform: uppercase;
+	margin-top: .5rem;
+	font-size: .8rem;
+	opacity: .8;
+	font-weight: 400;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta-contents {
+	font-size: .9rem;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta-contents p, #title-block-header.quarto-title-block.default .quarto-title-authors p, #title-block-header.quarto-title-block.default .quarto-title-affiliations p {
+	font-size: .8rem;
+	margin: 0 0 .1rem 0;
 }
 
 .sidebar-title {
@@ -369,7 +384,36 @@ nav[role=doc-toc] {
 	margin: 2rem 0 0 0;
 }
 
-
+/* Footnotes & Asides */
+.no-row-height.column-margin.column-container {
+	height: 1em;
+	overflow: visible;
+}
+.column-margin figcaption, .margin-caption, div.aside, aside, .column-margin {
+	font-size: .7rem;
+}
+.column-margin.column-container p {
+	font-size: .7rem;
+	line-height: 1.2;
+	margin: 1rem 0 .5rem 0;
+	padding: 0 0 0 0;
+	position: relative;
+}
+.footnote-reference {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2;
+	padding: 0 0 0 .2rem;
+}
+.margin-aside {
+	font-family: adelle-sans,sans-serif;
+	color: #006400;
+	font-size: .7rem;
+	font-weight: 300;
+	line-height: 1.2;
+	padding: 0 0 0 0;
+	position: relative;
+}
 
 /* Blockquotes */
 blockquote {
@@ -1013,7 +1057,9 @@ header {
     font-size: .9rem;
     text-align: left;
     line-height: 1.3;
+	max-width: 35rem;
 	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 .license h2 {
     font-family: "athelas", serif;
@@ -1044,6 +1090,7 @@ header {
 	width: 35rem;
     text-align: left;
 	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 .epigraph-title h1 {
 	color: transparent;
@@ -1061,6 +1108,8 @@ header {
     font-style: italic;
     text-align: left;
     line-height: 1.7;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 .epigraph-quote-small {
     font-size: 0.7rem;
@@ -1072,7 +1121,8 @@ header {
 .epigraph-cite {
 	font-size: .8rem;
     text-align: right;
-    margin: .5rem 0 0 0;
+    margin: .1rem 0 0 0;
+	padding: 0 0 0 0;
 }
 .epigraph-author {
     font-size: 0.8rem;
@@ -1080,23 +1130,21 @@ header {
     font-style: normal;
     text-align: left;
     margin: 1rem 0 0 0;
+	padding: 0 0 0 0;
 }
 .epigraph-source {
     font-size: 0.8rem;
     font-weight: 300;
     font-style: italic;
     text-align: left;
-}
-.epigraph figure {
-    margin: 2rem auto 2rem auto;
-    padding: 0 0 0 0;
-    border: none;
+	padding: 0 0 0 0;
 }
 .epigraph img {
 	width: 25rem;
 	display: block;
 	text-align: center;
 	margin: 2rem auto 0 auto;
+	padding: 0 0 0 0;
 }
 
 /* REAR MATTER */
@@ -1114,16 +1162,19 @@ header {
 
 /* FOOTER */
 footer {
-	height: 1rem;
+	background: #fffaf0;
+}
+footer.footer .nav-footer, #quarto-header > nav {
+	padding-left: 1em;
+	padding-right: 1em;
 	background: #fffaf0;
 }
 .nav-footer .nav-footer-center {
 	font-size: .8em;
-	height: 1rem;
 	background: #fffaf0;
 }
 .nav-footer .toc-actions {
-	margin: 1rem 0 0 0;
+	margin: 0 0 0 0;
 	padding-bottom: .5em;
 	padding-top: .5em;
 }
