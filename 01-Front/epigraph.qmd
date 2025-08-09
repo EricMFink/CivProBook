@@ -1,4 +1,6 @@
+::: {.content-hidden when-format="html"}
 # Epigraph {.unnumbered}
+:::
 
 <div class="epigraph">
 

@@ -1,8 +1,6 @@
-<div class="index">
-
+::: {.content-hidden when-format="html"}
 # Home {.unnumbered}
-
-</div>
+:::
 
 <div class="license">
 

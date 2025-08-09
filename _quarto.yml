@@ -1,20 +1,32 @@
 project:
-    type: tufte
-    output-dir: docs
+  type: book
+
+execute:
+  freeze: auto
+
 book:
-  open-graph: true
-  site-url: https://www.emfink.org/CivProBook
-  repo-url: https://github.com/EricMFink/CivProBook
-  repo-actions: [issue]
   title: "Civil Procedure"
   subtitle: "An Open-Source Casebook"
-  title-short: Civil Procedure # title-short is used in the pdf head
-  output-file: CivProBook # outputs: docs/CivProBook.pdf
-  author: Eric M. Fink
+  author:
+  - name: Eric M. Fink
+    email: efink@elon.edu
+    affiliations:
+      - name: Elon University School of Law
+        address: 201 North Greene Street
+        city: Greensboro
+        state: NC
+        postal-code: 27278
   date: September 2025
   date-format: MMMM YYYY
   license: "CC BY NC SA"
   downloads: [pdf]
+  url: https://www.emfink.net/CivProBook
+  repo-url: https://github.com/EricMFink/CivProBook
+  repo-actions: issue
+  search: true
+  reader-mode: true
+  sidebar:
+    style: "docked"
   chapters:
     - index.qmd
     - 01-Front/epigraph.qmd
@@ -26,52 +38,21 @@ book:
         - 03-Back/references.qmd
         - 03-Back/ack.qmd
         - 03-Back/colophon.qmd
+
 bibliography: CivProBook.yaml
 csl: casebook-bibliography.csl
 
 format:
-  html:
+  bookup-html:
     header-includes: |
       <link rel="stylesheet" href="https://use.typekit.net/viv2jun.css">    
-    page-layout: full
-    reference-location: margin
-    citation-location: document
     backgroundcolor: FloralWhite
     sidebarbackgroundcolor: FloralWhite
-    default-image-extension: svg
     mainfont: "athelas"
-    sansfontoptions: "Scale=MatchUppercase"
     toc: true
-    toc-depth: 4
+    toc-depth: 3
     toc-location: left
-    toc-title: "Contents"
     number-sections: true
     number-depth: 3
-    css: casebook-tufte.css
-  pdf:
     reference-location: margin
-    citation-location: margin
-    fig-cap-location: bottom
-    documentclass: tufte-book
-    classoption: [sfsidenotes]
-    number-sections: true
-    number-depth: 3
-    format-resources:
-      - tufte-book.cls
-      - tufte-common.def
-      - tufte.bst
-    template-partials: # replaces
-      - "partials/title.tex"
-      - "partials/before-body.tex"
-    include-in-header: #adds
-      - "partials/in-header.tex"
-      - "partials/definitions.tex"
-    include-after-body: #adds
-      - "partials/after-body.tex"
-    toc-depth: 4
-    toc-title: "Contents"
-    indent: 0px
-    mainfont: "athelas"
-    sansfont: "Adelle Sans"
-    sansfontoptions: "Scale=MatchUppercase"
-    default-image-extension: png
+    citation-location: document
